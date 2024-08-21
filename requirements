@@ -1,6 +1,6 @@
 gdown
 streamlit
-tensorflow 
+tensorflow==2.17.0
 numpy
 pillow
   
