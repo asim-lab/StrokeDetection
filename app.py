@@ -1,7 +1,3 @@
-
-
-
-
 import streamlit as st
 import tensorflow as tf
 import numpy as np
@@ -25,11 +21,13 @@ st.markdown(
     }
     </style>
     <div class="header">
-        <img src="/home/mudassar/Downloads/gwbz3fsgp8-2/EE.jpeg" alt="🧠" width="50" height="50" style="vertical-align:middle">
-        <span>AI-Powered Stroke Diagnosis: A Web Application for Enhanced Medical Imaging</span>
+        <span>🧠 AI-Powered Stroke Diagnosis: A Web Application for Enhanced Medical Imaging</span>
     </div>
-    """, unsafe_allow_html=True
+    """, 
+    unsafe_allow_html=True
 )
+
+
 
 # Goals Section
 st.markdown("## Project Goals")
@@ -59,7 +57,7 @@ st.sidebar.title("Upload an Image to Check the Stroke by AI Model")
 st.sidebar.info(
     """
     - Upload an image in PNG format.
-    - The model will classify the image into either 'Ischemic' or 'Normal'.
+    - The model will classify the image into either 'Stroke' or 'Normal'.
     """
 )
 
@@ -148,6 +146,5 @@ st.markdown(
     </div>
     """, unsafe_allow_html=True
 )
-
 
 
