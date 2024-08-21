@@ -136,15 +136,13 @@ st.markdown(
         text-align: center;
         background-color: #4CAF50;
         color: white;
-        font-size: 14px;
+        font-size: 12px;
         border-radius: 12px;
         margin-top: 20px;
     }
     </style>
     <div class="footer">
-        © 2024 Stroke Classifier. All rights reserved.
+        © 2024 Center of Excellence in Artificial Intelligence, Machine Learning and Smart Grid Technology, Department of Electrical Engineering, Faculty of Engineering, Chulalongkorn University, Bangkok 10330, Thailand. All rights reserved.
     </div>
     """, unsafe_allow_html=True
 )
-
-
