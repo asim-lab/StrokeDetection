@@ -35,20 +35,16 @@ st.markdown(
     """
 
 1. **Accurate Stroke Classification**
-   - Develop an AI model-based web app to classify medical images into categories such as ischemic stroke, hemorrhagic stroke, and normal.
-   - Provide reliable diagnostic support to healthcare professionals.
+   - Develop an AI model-based web app for classifying medical images (Stroke, Normal).
 
 2. **Improved Treatment Planning**
-   - Enable neurologists to use the AI model's diagnosis results to devise appropriate treatment plans for stroke patients.
-   - Enhance patient outcomes and recovery processes.
+   - Support healthcare professionals with trusted diagnostic suggestions.
 
 3. **Efficient Healthcare Delivery**
-   - Reduce unnecessary hospital visits by offering remote diagnostic capabilities.
-   - Improve healthcare efficiency and minimize the burden on both patients and healthcare facilities.
+   - Reduce hospital visits through remote diagnosis and improve the overall efficiency of healthcare.
 
 4. **Cost Reduction and Accessibility**
-   - Lower overall healthcare costs by reducing the need for frequent in-person consultations.
-   - Make stroke diagnosis more accessible and affordable, especially in remote areas.
+   - Reducing healthcare costs and improving accessibility, especially in remote areas.
    """
 )
 
