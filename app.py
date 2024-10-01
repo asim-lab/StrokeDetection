@@ -27,8 +27,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-
 # Goals Section
 st.markdown("## Project Goals")
 st.markdown(
@@ -52,7 +50,7 @@ st.markdown(
 st.sidebar.title("Upload an Image to Check the Stroke by AI Model")
 st.sidebar.info(
     """
-    - Upload an image in PNG format.
+    - Upload an image in PNG, JPG, or JPEG format.
     - The model will classify the image into either 'Stroke' or 'Normal'.
     """
 )
@@ -82,7 +80,7 @@ model = load_model()
 
 # Main section for file upload
 st.markdown("### Upload your image below:")
-file = st.file_uploader("Choose an image...", type=["png"])
+file = st.file_uploader("Choose an image...", type=["png", "jpg", "jpeg"])
 
 if file is None:
     st.markdown("### Waiting for an image to be uploaded...", unsafe_allow_html=True)
@@ -108,8 +106,11 @@ else:
     )
     st.image(test_image, caption="Input Image", width=400)
     
+    # Convert uploaded image to a NumPy array
+    test_image_np = np.asarray(test_image)
+    
     # Prediction
-    pred = predict_class(np.asarray(test_image), model)
+    pred = predict_class(test_image_np, model)
     class_names = ['Stroke', 'Normal']
     result = class_names[np.argmax(pred)]
     
@@ -140,5 +141,6 @@ st.markdown(
     <div class="footer">
         © 2024 Center of Excellence in Artificial Intelligence, Machine Learning and Smart Grid Technology, Department of Electrical Engineering, Faculty of Engineering, Chulalongkorn University, Bangkok 10330, Thailand. All rights reserved.
     </div>
-    """, unsafe_allow_html=True
+    """, 
+    unsafe_allow_html=True
 )
